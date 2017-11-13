@@ -4,51 +4,51 @@ import java.util.Scanner;
 
 public class Calculate {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		Scanner input = new Scanner(System.in);
-		int x, y;
-		String operator;
-		while (true) {
-			System.out.println("¿¬»êÇÒ µÎ °ªÀ» ÀÔ·ÂÇÏ½Ã¿À.");
-			x = input.nextInt();
-			y = input.nextInt();
-			System.out.println("¿¬»êÇÒ ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À. (+, -, *, /)");
-			operator = input.next();
-			if (operator.equals("+")) {
-				System.out.println(x + " + " + y + " = " + add(x, y));
-			} else if (operator.equals("-")) {
-				System.out.println(x + " - " + y + " = " + sub(x, y));
-			} else if (operator.equals("*")) {
-				System.out.println(x + " * " + y + " = " + mul(x, y));
-			} else if (operator.equals("/")) {
-				System.out.println(x + " / " + y + " = " + div(x, y));
-			} else {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
-				break;
-			}
-		}
-	}
+        Scanner input = new Scanner(System.in);
+        int x, y;
+        String operator;
+        while (true) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½.");
+            x = input.nextInt();
+            y = input.nextInt();
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½. (+, -, *, /)");
+            operator = input.next();
+            if (operator.equals("+")) {
+                System.out.println(x + " + " + y + " = " + add(x, y));
+            } else if (operator.equals("-")) {
+                System.out.println(x + " - " + y + " = " + sub(x, y));
+            } else if (operator.equals("*")) {
+                System.out.println(x + " * " + y + " = " + mul(x, y));
+            } else if (operator.equals("/")) {
+                System.out.println(x + " / " + y + " = " + div(x, y));
+            } else {
+                System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+                break;
+            }
+        }
+    }
 
-	public static int add(int x, int y) {
+    public static int add(int x, int y) {
 
-		return 0;
-	}
+        return x + y;
+    }
 
-	public static int sub(int x, int y) {
+    public static int sub(int x, int y) {
 
-		return 0;
-	}
+        return x - y;
+    }
 
-	public static int mul(int x, int y) {
+    public static int mul(int x, int y) {
 
-		return 0;
-	}
+        return x * y;
+    }
 
-	public static double div(int x, int y) {
-		// ½Ç¼ö·Î ¹ÝÈ¯ÀÌ µÇµµ·Ï ±¸Çö
+    public static double div(int x, int y) {
+        // ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½ ï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-		return 0;
-	}
+        return x / y;
+    }
 }
